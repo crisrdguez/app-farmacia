@@ -40,17 +40,17 @@
     {
       title: '300 puntos',
       desc: 'Pack de vitaminas y minerales',
-      img: '../../public/imagenpuntos.png'
+      img: '/imagenpuntos.png'
     },
     {
       title: '2x1 en cremas',
       desc: 'Llévate 2 cremas al precio de 1.',
-      img: '../../public/imagen2x1.png'
+      img: '/imagen2x1.png'
     },
     {
       title: 'Solares',
       desc: 'Descuentos de hasta 50% en productos solares',
-      img: '../../public/imagensol.png'
+      img: '/imagensol.png'
     }
   ]
   

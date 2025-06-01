@@ -51,6 +51,7 @@
   .label {
     font-size: 15px;
     color: #21432d;
+    text-align:center;
   }
   </style>
   
