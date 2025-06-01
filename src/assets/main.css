@@ -7,6 +7,12 @@
   font-weight: normal;
 }
 
+body {
+  background: #fff !important;
+  color: #21432d;
+}
+
+
 a,
 .green {
   text-decoration: none;
@@ -33,5 +39,12 @@ a,
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #fff !important;
+    color: #21432d !important;
   }
 }
