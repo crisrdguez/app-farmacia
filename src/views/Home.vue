@@ -1,6 +1,5 @@
 <template>
     <div class="home">
-      <TopBar />
       <div class="greeting">
         Buenas tardes, <span class="name">RAIMUNDO</span>
       </div>
@@ -21,8 +20,6 @@
       />
 
       <CarouselPromos />
-  
-      <BottomNav />
     </div>
   </template>
   
@@ -34,15 +31,15 @@
   import CarouselPromos from '../components/CarouselPromos.vue';
   
   const usedCards = [
-    { icon: '🛒', text: 'Mis encargos' },
-    { icon: '💬', text: 'Chat Farmacéutico' },
-    { icon: '🎁', text: 'Promociones' },
+    { icon: '🛒', text: 'Mis encargos', route: '/encargos' },
+    { icon: '💬', text: 'Chat Farmacéutico', route: '/consulta' },
+    { icon: '🎁', text: 'Promociones', route: '/promociones' },
   ];
   
   const discoverFeatures = [
-    { icon: '⏰', text: 'Recordatorio' },
-    { icon: '✉️', text: 'Newsletter' },
-    { icon: '💰', text: 'Mis puntos'},
+    { icon: '⏰', text: 'Recordatorio', route: '/recordatorios' },
+    { icon: '✉️', text: 'Newsletter', route: '/recordatorios' },
+    { icon: '💰', text: 'Mis puntos', route: '/puntos'},
   ];
   </script>
   

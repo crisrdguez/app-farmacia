@@ -2,14 +2,23 @@
     <section class="section-cards">
       <h2>{{ title }}</h2>
       <div class="cards">
-        <div
-          v-for="card in cards"
-          :key="card.text"
-          class="card"
-        >
-          <span class="icon" v-html="card.icon"></span>
-          <span class="label">{{ card.text }}</span>
-        </div>
+        <template v-for="card in cards" :key="card?.text">
+          <router-link
+            v-if="card && card.route"
+            :to="card.route"
+            class="card"
+          >
+            <span class="icon" v-html="card.icon"></span>
+            <span class="label">{{ card.text }}</span>
+          </router-link>
+          <div
+            v-else-if="card"
+            class="card"
+          >
+            <span class="icon" v-html="card.icon"></span>
+            <span class="label">{{ card.text }}</span>
+          </div>
+        </template>
       </div>
     </section>
   </template>
@@ -51,7 +60,7 @@
   .label {
     font-size: 15px;
     color: #21432d;
-    text-align:center;
+    text-align: center;
   }
   </style>
   

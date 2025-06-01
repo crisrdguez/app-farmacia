@@ -2,15 +2,25 @@
     <section class="feature-grid">
       <h2>{{ title }}</h2>
       <div class="grid">
-        <div
-          v-for="feature in features"
-          :key="feature.text"
-          class="feature"
-        >
-          <span class="icon" v-html="feature.icon"></span>
-          <span class="label">{{ feature.text }}</span>
-          <span v-if="feature.badge" class="badge">{{ feature.badge }}</span>
-        </div>
+        <template v-for="feature in features" :key="feature?.text">
+          <router-link
+            v-if="feature && feature.route"
+            :to="feature.route"
+            class="feature"
+          >
+            <span class="icon" v-html="feature.icon"></span>
+            <span class="label">{{ feature.text }}</span>
+            <span v-if="feature.badge" class="badge">{{ feature.badge }}</span>
+          </router-link>
+          <div
+            v-else-if="feature"
+            class="feature"
+          >
+            <span class="icon" v-html="feature.icon"></span>
+            <span class="label">{{ feature.text }}</span>
+            <span v-if="feature.badge" class="badge">{{ feature.badge }}</span>
+          </div>
+        </template>
       </div>
     </section>
   </template>
@@ -41,6 +51,7 @@
     align-items: center;
     position: relative;
     margin-bottom: 10px;
+    text-decoration: none;
   }
   .icon {
     font-size: 25px;
@@ -49,7 +60,7 @@
   .label {
     font-size: 15px;
     color: #21432d;
-    text-align:center;
+    text-align: center;
   }
   .badge {
     position: absolute;

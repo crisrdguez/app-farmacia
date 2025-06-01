@@ -1,17 +1,23 @@
 <template>
     <nav class="bottom-nav">
-      <div v-for="item in navItems" :key="item.label" class="nav-item">
+      <router-link
+        v-for="item in navItems"
+        :key="item.label"
+        :to="item.route"
+        class="nav-item"
+      >
         <span class="icon" v-html="item.icon"></span>
         <span class="label">{{ item.label }}</span>
-      </div>
+      </router-link>
     </nav>
   </template>
   
+  
   <script setup>
   const navItems = [
-    { icon: "🏠", label: "Inicio" },
-    { icon: "💊", label: "Productos" },
-    { icon: "💬", label: "Chat" },
+    { icon: "🏠", label: "Inicio", route: "/" },
+    { icon: "💊", label: "Productos", route: '/buscar' },
+    { icon: "💬", label: "Chat", route: '/consulta' },
   ];
   </script>
   

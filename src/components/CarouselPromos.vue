@@ -9,7 +9,19 @@
             :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
           >
             <div v-for="(promo, idx) in promos" :key="idx" class="carousel-item">
-              <div class="promo-card">
+              <!-- SOLO UNO de estos dos, según si tiene route -->
+              <router-link
+                v-if="promo.route"
+                :to="promo.route"
+                class="promo-card"
+              >
+                <img :src="promo.img" :alt="promo.title" />
+                <div class="promo-info">
+                  <h3>{{ promo.title }}</h3>
+                  <p>{{ promo.desc }}</p>
+                </div>
+              </router-link>
+              <div v-else class="promo-card">
                 <img :src="promo.img" :alt="promo.title" />
                 <div class="promo-info">
                   <h3>{{ promo.title }}</h3>
@@ -40,17 +52,20 @@
     {
       title: '300 puntos',
       desc: 'Pack de vitaminas y minerales',
-      img: '/imagenpuntos.png'
+      img: '/imagenpuntos.png',
+      route: '/promociones'
     },
     {
       title: '2x1 en cremas',
       desc: 'Llévate 2 cremas al precio de 1.',
-      img: '/imagen2x1.png'
+      img: '/imagen2x1.png',
+      route: '/promociones'
     },
     {
       title: 'Solares',
       desc: 'Descuentos de hasta 50% en productos solares',
-      img: '/imagensol.png'
+      img: '/imagensol.png',
+      route: '/promociones'
     }
   ]
   
