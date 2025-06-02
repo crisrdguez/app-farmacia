@@ -7,6 +7,7 @@ import MisPuntos from '../views/MisPuntos.vue'
 import Buscador from '../views/Buscador.vue'
 import ProductoDetalle from '../views/ProductoDetalle.vue'
 import Consulta from '../views/Consulta.vue'
+import Newsletter from '../views/Newsletter.vue'
 
 const routes = [
     { path: '/', name: 'Home', component: Home },
@@ -16,6 +17,7 @@ const routes = [
     { path: '/puntos', name: 'MisPuntos', component: MisPuntos },
     { path: '/consulta', name: 'Consulta', component: Consulta },
     { path: '/buscar', name: 'Buscador', component: Buscador },
+    { path: '/newsletter', name: 'Newsletter', component: Newsletter },
     { path: '/producto/:id', name: 'ProductoDetalle', component: ProductoDetalle }
   ]
 

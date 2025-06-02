@@ -1,7 +1,7 @@
 <template>
     <div class="home">
       <div class="greeting">
-        Buenas tardes, <span class="name">RAIMUNDO</span>
+        Bienvenido, <span class="name">RAIMUNDO</span>
       </div>
       <div>
         <input type="text" placeholder="Búsqueda de productos 🔍" class="search"/>
@@ -24,10 +24,8 @@
   </template>
   
   <script setup>
-  import TopBar from '../components/TopBar.vue';
   import SectionCards from '../components/SectionCards.vue';
   import FeatureGrid from '../components/FeatureGrid.vue';
-  import BottomNav from '../components/BottomNav.vue';
   import CarouselPromos from '../components/CarouselPromos.vue';
   
   const usedCards = [
@@ -38,7 +36,7 @@
   
   const discoverFeatures = [
     { icon: '⏰', text: 'Recordatorio', route: '/recordatorios' },
-    { icon: '✉️', text: 'Newsletter', route: '/recordatorios' },
+    { icon: '✉️', text: 'Newsletter', route: '/newsletter' },
     { icon: '💰', text: 'Mis puntos', route: '/puntos'},
   ];
   </script>

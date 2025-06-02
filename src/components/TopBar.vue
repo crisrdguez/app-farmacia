@@ -1,6 +1,6 @@
 <template>
     <header class="topbar">
-      <h2>Farmacia Grupo 3</h2>
+      <h2>Farmacia Grupo 2</h2>
       <div class="icons">
         <span>👤</span>
         <span>🔔</span>
