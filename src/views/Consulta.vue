@@ -165,33 +165,25 @@ function handleSuggestion(text) {
 
 @media (max-width: 600px) {
   .chat-container {
-    height: 100vh;
-    padding: 8px;
-    border-radius: 0;
+    height: 90vh;         /* Ocupa todo el alto de la pantalla */
+    padding: 0;            /* Sin padding extra */
+    border-radius: 0;      /* Sin bordes redondeados */
+    margin: 0;             /* Sin margen */
+    max-width: 100vw;      /* Opcional: ocupa todo el ancho */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
   .messages {
-    margin-bottom: 8px;
+    flex: 1;
+    margin-bottom: 0;
+    overflow-y: auto;
+    min-height: 0;
   }
-  .message {
-    margin: 6px 0;
-    padding: 6px 10px;
-    font-size: 14px;
-    max-width: 85%;
-  }
-  .input-area input {
-    padding: 6px;
-    font-size: 14px;
-  }
-  .input-area button {
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-  .suggestions {
-    margin-bottom: 8px;
-  }
-  .suggestion {
-    padding: 4px 8px;
-    font-size: 12px;
+  .input-area {
+    padding: 8px;          /* Espacio interior opcional */
+    border-top: 1px solid #ddd;
+    background: #fff;      /* Fija el fondo de la caja */
   }
 }
 </style>
