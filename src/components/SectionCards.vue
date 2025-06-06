@@ -40,17 +40,17 @@ defineProps(['title', 'cards']);
 }
 .cards {
   display: flex;
-  gap: 18px;
+  gap: 15px;
 }
 .card {
-  flex: 1;
+  flex: 1 1 calc(33.33% - 12px);
   background: rgb(6, 202, 156,0.1);
   border-radius: 8px;
   padding: 18px 0 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 95px;
+  min-width: 90px;
   min-height: 80px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05); 
   text-decoration: none; 

@@ -41,7 +41,6 @@ defineProps(['title', 'features']);
 .grid {
   display: flex;
   gap: 15px;
-  flex-wrap: wrap;
 }
 .feature {
   flex: 1 1 0; 
