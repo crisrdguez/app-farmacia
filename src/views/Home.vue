@@ -38,7 +38,7 @@
   const usedCards = [
     { icon: 'shopping-cart', text: 'Mis encargos', route: '/encargos' },
     { icon: 'comment-dots', text: 'Chat', route: '/consulta' },
-    { icon: 'gift', text: 'Promociones', route: '/promociones' },
+    { icon: 'gift', text: 'Promos', route: '/promociones' },
   ];
   
   const discoverFeatures = [
