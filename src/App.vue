@@ -22,7 +22,7 @@ import BottomNav from './components/BottomNav.vue'
 .main-content {
   flex: 1;
   padding-bottom: 70px; /* espacio para el BottomNav */
-  padding-top: 60px;    /* espacio para el TopBar si es fixed */
+  padding-top: 40px;    /* espacio para el TopBar si es fixed */
 }
 header {
   line-height: 1.5;

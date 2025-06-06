@@ -9,7 +9,6 @@
             :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
           >
             <div v-for="(promo, idx) in promos" :key="idx" class="carousel-item">
-              <!-- SOLO UNO de estos dos, según si tiene route -->
               <router-link
                 v-if="promo.route"
                 :to="promo.route"
@@ -108,7 +107,7 @@
     padding: 0 4px;
   }
   .promo-card {
-    background: #eaf5ec;
+    background: rgb(6, 202, 156,0.1);
     border-radius: 16px;
     box-shadow: 0 1px 5px #0002;
     overflow: hidden;

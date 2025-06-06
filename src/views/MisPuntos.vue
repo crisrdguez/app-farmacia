@@ -6,6 +6,6 @@
     </div>
   </template>
   <script setup>
-  const puntos = 250 // Mockeado
+  const puntos = 250 
   </script>
   
