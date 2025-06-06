@@ -47,7 +47,7 @@ defineProps(['title', 'features']);
   flex: 1 1 0; 
   min-width: 90px;
   background: #fff;
-  border-radius: 14px;
+  border-radius: 8px;
   padding: 16px 0 8px 0;
   display: flex;
   flex-direction: column;

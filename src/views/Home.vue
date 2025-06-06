@@ -51,7 +51,6 @@
  .home {
   padding: 0 0 70px 0;
   min-height: 100vh;
-  margin: 0 14px;
 }
 
 
