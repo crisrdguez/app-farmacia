@@ -1,8 +1,6 @@
 <template>
     <div class="home">
-      <div class="user-greeting-section"> <div class="user-avatar-container">
-        <img src="/user.png" alt="Avatar de usuario" class="user-avatar" />
-      </div>
+      <div class="user-greeting-section"> 
       <div class="greeting-text">
         <div class="greeting">
           Bienvenido, <span class="name">León</span>

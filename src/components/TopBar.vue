@@ -6,8 +6,11 @@
         <h2>Farmacia Grupo 2</h2>
       </div>
     </router-link>
+    
     <div class="icons">
-      <font-awesome-icon icon="user" />
+<div class="user-greeting-section"> <div class="user-avatar-container">
+        <img src="/user.png" alt="Avatar de usuario" class="user-avatar" />
+      </div></div>
       <font-awesome-icon icon="bell" />
     </div>
   </header>
@@ -23,7 +26,7 @@ header.topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px;
+  padding: 8px;
   background: #003559;
   color: aliceblue;
   border-radius: 0 0 20px 20px;
@@ -59,4 +62,25 @@ header.topbar {
   color: aliceblue;
   cursor: pointer;
 }
+
+.user-greeting-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar-container {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  overflow: hidden; 
+    border: 2px solid #e0e0e0; 
+  flex-shrink: 0; 
+}
+
+.user-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
 </style>
