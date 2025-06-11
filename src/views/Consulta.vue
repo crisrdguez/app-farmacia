@@ -109,7 +109,7 @@ function handleSuggestion(text) {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 60vh;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
@@ -124,8 +124,8 @@ function handleSuggestion(text) {
 }
 
 .message {
-  margin: 8px;
-  padding: 8px 12px;
+  margin: 4px;
+  padding: 4px 8px;
   border-radius: 16px;
   max-width: 70%; /* Ajusta el ancho máximo para mensajes individuales */
   word-wrap: break-word; /* Para asegurar que el texto largo se rompa */
@@ -247,7 +247,7 @@ function handleSuggestion(text) {
 /* ------------------------------------------- */
 @media (max-width: 600px) {
   .chat-container {
-    height: 90vh;
+    height: 83vh;
     padding: 0;
     border-radius: 0;
     margin: 0;
@@ -258,10 +258,11 @@ function handleSuggestion(text) {
   }
   .messages {
     flex: 1;
+    height: 300px;
     margin-bottom: 0;
     overflow-y: auto;
     min-height: 0;
-    padding: 10px; /* Añade padding para el contenido en móvil */
+    padding: 5px; /* Añade padding para el contenido en móvil */
   }
   .input-area {
     padding: 8px;
