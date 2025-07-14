@@ -2,8 +2,7 @@
   <header class="topbar">
     <router-link to="/" class="pharmacy-home-link">
       <div class="pharmacy-info">
-        <font-awesome-icon icon="plus" class="pharmacy-icon" />
-        <h2>Farmacia Grupo 2</h2>
+        <img src="/FarmApp2.png" alt="Avatar de usuario" class="pharmacy-icon" />
       </div>
     </router-link>
     
@@ -39,9 +38,7 @@ header.topbar {
 }
 
 .pharmacy-icon {
-  font-size: 24px;
-  margin-right: 8px;
-  color: aliceblue;
+  width:105px;
 }
 
 .topbar h2 {
