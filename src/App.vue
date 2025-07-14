@@ -11,6 +11,7 @@
 <script setup>
 import TopBar from './components/TopBar.vue'
 import BottomNav from './components/BottomNav.vue'
+import MobileNotification from './components/MobileNotification.vue';
 </script>
 
 <style scoped>
